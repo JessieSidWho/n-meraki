@@ -32,7 +32,6 @@ const LeftContentBlock = ({ icon, title, content, section, t, id }) => {
                     section.map((item, id) => {
                       return (
                         <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
                           <S.MinTitle>{t(item.title)}</S.MinTitle>
                           <S.MinPara>{t(item.content)}</S.MinPara>
                         </Col>
