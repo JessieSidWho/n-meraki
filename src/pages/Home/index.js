@@ -6,6 +6,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import bg from '../../images/plant.jpeg';
 
 const ContactFrom = lazy(() => import("../../components/ContactForm"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
@@ -15,7 +16,8 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 
 const Home = () => {
   return (
-    <Container>
+    <div style={{backgroundImage: `url(${bg})`, backgroundPosition: 'bottom', backgroundSize: '100%', backgroundRepeat: 'no-repeat'}}>
+    <Container >
       <ScrollToTop />
       <ContentBlock
         type="right"
@@ -60,6 +62,7 @@ const Home = () => {
         id="contact"
       />
     </Container>
+    </div>
   );
 };
 
