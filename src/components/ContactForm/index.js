@@ -40,7 +40,7 @@ const Contact = ({ title, content, id, t }) => {
                 <Input
                   type="text"
                   name="name"
-                  id="Name"
+                  // id="Name"
                   placeholder="Your Name"
                   value={values.name || ""}
                   onChange={handleChange}
@@ -51,8 +51,8 @@ const Contact = ({ title, content, id, t }) => {
                 <Input
                   type="text"
                   name="email"
-                  id="Email"
-                  placeholder="Your Email"
+                  // id="Email"
+                  placeholder="Your Email "
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -63,7 +63,7 @@ const Contact = ({ title, content, id, t }) => {
                   placeholder="Your Message"
                   value={values.message || ""}
                   name="message"
-                  id="Message"
+                  // id="Message"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
